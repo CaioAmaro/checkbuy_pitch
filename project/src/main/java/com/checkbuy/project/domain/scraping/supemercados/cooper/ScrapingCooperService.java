@@ -46,6 +46,7 @@ public class ScrapingCooperService {
         String driverPath = Paths.get("project", "drivers", "geckodriver.exe")
                 .toAbsolutePath()
                 .toString();
+
         System.setProperty("webdriver.gecko.driver", driverPath);
 
         FirefoxOptions options = new FirefoxOptions();
