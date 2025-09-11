@@ -28,6 +28,26 @@ RUN mvn clean package -DskipTests
 # =========================================================================
 FROM eclipse-temurin:21-jre-alpine
 
+# --- INÍCIO DA SEÇÃO PARA INSTALAR O FIREFOX ---
+# Mudar para o usuário root TEMPORARIAMENTE para poder instalar pacotes
+USER root
+
+# Instala o Firefox e as fontes necessárias para renderizar páginas corretamente
+RUN apk update && \
+    apk add --no-cache \
+        firefox \
+        ttf-freefont \
+        font-noto-cjk && \
+    # Limpa o cache para manter a imagem final o menor possível
+    rm -rf /var/cache/apk/*
+
+# Cria um usuário sem privilégios para rodar a aplicação (boa prática de segurança)
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+# Muda para o novo usuário para o resto dos comandos
+USER appuser
+# --- FIM DA SEÇÃO PARA INSTALAR O FIREFOX ---
+
+
 # Define o diretório de trabalho
 WORKDIR /app
 

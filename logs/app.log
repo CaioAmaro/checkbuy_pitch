@@ -437,3 +437,668 @@ Caused by: org.springframework.util.PlaceholderResolutionException: Could not re
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
 	... 68 common frames omitted
+2025-09-10 21:09:11 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 2940 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:09:11 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:09:11 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:09:11 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:09:13 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:09:13 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 281 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:09:15 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:09:15 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:09:15 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:09:15 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:09:15 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3647 ms
+2025-09-10 21:09:15 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:09:16 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:09:17 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13f48f07
+2025-09-10 21:09:17 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:09:17 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:09:17 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.164s)
+2025-09-10 21:09:17 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:09:17 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:09:18 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:09:18 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:09:18 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:09:19 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:09:19 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:09:19 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:09:19 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:09:21 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:09:21 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:09:22 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:09:23 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:09:23 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:09:24 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:09:24 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:09:25 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:09:25 - c.c.project.ProjectApplication - Started ProjectApplication in 14.941 seconds (process running for 16.528)
+2025-09-10 21:09:40 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:09:40 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:09:40 - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-10 21:09:40 - o.s.security.web.FilterChainProxy - Securing GET /
+2025-09-10 21:09:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:40 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:09:40 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:09:40 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:09:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:41 - o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2025-09-10 21:09:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:41 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:09:41 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:09:41 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:09:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:45 - o.s.security.web.FilterChainProxy - Securing GET /front/index.html
+2025-09-10 21:09:45 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:45 - o.s.security.web.FilterChainProxy - Secured GET /front/index.html
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/styles/pages/homepage.css
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/styles/pages/homepage.css
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/pages/homepage.js
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/pages/homepage.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/footer.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/header.js
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/header.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/footer.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/loginAndRegister.js
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/loginAndRegister.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/images/caio.jpg
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/images/jackson.jpg
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/images/jackson.jpg
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/videos/market-room-loop.mp4
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/images/douglas.jpg
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/videos/market-room-loop.mp4
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/images/douglas.jpg
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/images/caio.jpg
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/config.js
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/config.js
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/components/header.html
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/components/header.html
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/videos/market-room-loop.mp4
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/videos/market-room-loop.mp4
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /styles/components/header.css
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/components/footer.html
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/components/footer.html
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/videos/market-room-loop.mp4
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/videos/market-room-loop.mp4
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Securing GET /front/images/logo.webp
+2025-09-10 21:09:46 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:09:46 - o.s.security.web.FilterChainProxy - Secured GET /front/images/logo.webp
+2025-09-10 21:12:11 - o.s.security.web.FilterChainProxy - Securing POST /cadastro
+2025-09-10 21:12:11 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:12:11 - o.s.security.web.FilterChainProxy - Secured POST /cadastro
+2025-09-10 21:17:00 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:17:00 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:17:00 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:17:00 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:17:00 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:17:16 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 17172 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:17:16 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:17:16 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:17:16 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:17:17 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:17:17 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 152 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:17:18 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:17:18 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:17:18 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:17:18 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:17:18 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2495 ms
+2025-09-10 21:17:19 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:17:19 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:17:19 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e33bb6
+2025-09-10 21:17:19 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:17:19 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:17:19 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.062s)
+2025-09-10 21:17:19 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:17:19 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:17:20 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:17:20 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:17:20 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:17:20 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:17:20 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:17:20 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:17:20 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:17:22 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:17:22 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:17:22 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:17:23 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:17:23 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:17:24 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:17:24 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:17:24 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:17:24 - c.c.project.ProjectApplication - Started ProjectApplication in 9.106 seconds (process running for 9.842)
+2025-09-10 21:17:34 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:17:34 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:17:34 - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/index.html
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/index.html
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/pages/homepage.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/styles/pages/homepage.css
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/pages/homepage.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/styles/pages/homepage.css
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/images/caio.jpg
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/images/caio.jpg
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/images/jackson.jpg
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/images/jackson.jpg
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/images/douglas.jpg
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/images/douglas.jpg
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/header.js
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/loginAndRegister.js
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/loginAndRegister.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/header.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/footer.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/footer.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/config.js
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/config.js
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/components/header.html
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/components/header.html
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /styles/components/header.css
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/components/footer.html
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/components/footer.html
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Securing GET /front/images/logo.webp
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:34 - o.s.security.web.FilterChainProxy - Secured GET /front/images/logo.webp
+2025-09-10 21:17:34 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:55 - o.s.security.web.FilterChainProxy - Securing POST /cadastro
+2025-09-10 21:17:55 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:17:55 - o.s.security.web.FilterChainProxy - Secured POST /cadastro
+2025-09-10 21:18:17 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:18:17 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:18:17 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:18:17 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:18:17 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:18:20 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 1560 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:18:20 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:18:20 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:18:20 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:18:22 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:18:22 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:18:23 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:18:23 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:18:23 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:18:23 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:18:23 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2794 ms
+2025-09-10 21:18:23 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:18:23 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:18:24 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15a3ddeb
+2025-09-10 21:18:24 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:18:24 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:18:24 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.070s)
+2025-09-10 21:18:24 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:18:24 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:18:24 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:18:24 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:18:24 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:18:25 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:18:25 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:18:25 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:18:25 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:18:26 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:18:26 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:18:27 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:18:28 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:18:28 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:18:29 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:18:29 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:18:29 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:18:29 - c.c.project.ProjectApplication - Started ProjectApplication in 9.863 seconds (process running for 10.639)
+2025-09-10 21:18:41 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:18:41 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:18:41 - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-10 21:18:41 - o.s.security.web.FilterChainProxy - Securing POST /cadastro
+2025-09-10 21:18:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:18:41 - o.s.security.web.FilterChainProxy - Secured POST /cadastro
+2025-09-10 21:18:41 - o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.checkbuy.project.exception.EmailJaCadastrado: E-mail: caioamarocci@gmail.com existente!]
+2025-09-10 21:18:51 - o.s.security.web.FilterChainProxy - Securing POST /cadastro
+2025-09-10 21:18:51 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:18:51 - o.s.security.web.FilterChainProxy - Secured POST /cadastro
+2025-09-10 21:19:49 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:19:49 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:19:49 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:19:49 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:19:49 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:19:53 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 22856 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:19:53 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:19:53 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:19:53 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:19:54 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:19:54 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:19:56 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:19:56 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:19:56 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:19:56 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:19:56 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3099 ms
+2025-09-10 21:19:56 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:19:56 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:19:57 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a1727dc
+2025-09-10 21:19:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:19:57 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:19:57 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.063s)
+2025-09-10 21:19:57 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:19:57 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:19:57 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:19:57 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:19:57 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:19:58 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:19:58 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:19:58 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:19:58 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:19:59 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:19:59 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:20:00 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:20:01 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:20:01 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:20:02 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:20:02 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:20:02 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:20:02 - c.c.project.ProjectApplication - Started ProjectApplication in 10.415 seconds (process running for 11.196)
+2025-09-10 21:20:29 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:20:29 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:20:29 - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-10 21:20:29 - o.s.security.web.FilterChainProxy - Securing POST /cadastro
+2025-09-10 21:20:29 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:20:29 - o.s.security.web.FilterChainProxy - Secured POST /cadastro
+2025-09-10 21:22:21 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:22:21 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:22:21 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:22:21 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:22:21 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:22:34 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 11564 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:22:34 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:22:34 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:22:34 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:22:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:22:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:22:37 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:22:37 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:22:37 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:22:37 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:22:37 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2451 ms
+2025-09-10 21:22:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:22:37 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:22:38 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64ebf044
+2025-09-10 21:22:38 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:22:38 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:22:38 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.065s)
+2025-09-10 21:22:38 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:22:38 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:22:38 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:22:38 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:22:38 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:22:39 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:22:39 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:22:39 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:22:39 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:22:40 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:22:40 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:22:41 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:22:42 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:22:42 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:22:42 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:22:43 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:22:43 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:22:43 - c.c.project.ProjectApplication - Started ProjectApplication in 9.013 seconds (process running for 9.729)
+2025-09-10 21:24:44 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:24:44 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:24:44 - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-10 21:24:44 - o.s.security.web.FilterChainProxy - Securing POST /cadastro
+2025-09-10 21:24:44 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:24:44 - o.s.security.web.FilterChainProxy - Secured POST /cadastro
+2025-09-10 21:25:16 - o.s.security.web.FilterChainProxy - Securing GET /front/styles/pages/homepage.css
+2025-09-10 21:25:16 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:25:16 - o.s.security.web.FilterChainProxy - Secured GET /front/styles/pages/homepage.css
+2025-09-10 21:25:16 - o.s.security.web.FilterChainProxy - Securing GET /front/styles/pages/homepage.css
+2025-09-10 21:25:16 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:25:16 - o.s.security.web.FilterChainProxy - Secured GET /front/styles/pages/homepage.css
+2025-09-10 21:25:17 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/config.js
+2025-09-10 21:25:17 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:25:17 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/config.js
+2025-09-10 21:26:01 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:26:01 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:26:01 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:26:01 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:26:01 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:26:10 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 11288 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:26:10 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:26:10 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:26:10 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:26:11 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:26:11 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:26:12 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:26:12 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:26:12 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:26:12 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:26:12 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2649 ms
+2025-09-10 21:26:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:26:13 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:26:13 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1622367d
+2025-09-10 21:26:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:26:13 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:26:13 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.064s)
+2025-09-10 21:26:13 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:26:13 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:26:14 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:26:14 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:26:14 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:26:14 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:26:14 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:26:14 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:26:14 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:26:16 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:26:16 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:26:16 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:26:18 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:26:18 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:26:19 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:26:19 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:26:19 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:26:19 - c.c.project.ProjectApplication - Started ProjectApplication in 10.207 seconds (process running for 10.98)
+2025-09-10 21:26:39 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:26:39 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:26:39 - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-10 21:26:39 - o.s.security.web.FilterChainProxy - Securing GET /front/index.html
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/index.html
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/pages/homepage.js
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/pages/homepage.js
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/styles/pages/homepage.css
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/styles/pages/homepage.css
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/images/douglas.jpg
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/images/douglas.jpg
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/images/jackson.jpg
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/images/jackson.jpg
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/videos/market-room-loop.mp4
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/videos/market-room-loop.mp4
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/images/caio.jpg
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/images/caio.jpg
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/header.js
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/header.js
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/footer.js
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/loginAndRegister.js
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/loginAndRegister.js
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/footer.js
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/videos/market-room-loop.mp4
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/videos/market-room-loop.mp4
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/config.js
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/config.js
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Securing GET /front/videos/market-room-loop.mp4
+2025-09-10 21:26:40 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:40 - o.s.security.web.FilterChainProxy - Secured GET /front/videos/market-room-loop.mp4
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /front/components/header.html
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Secured GET /front/components/header.html
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /styles/components/header.css
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /front/components/footer.html
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Secured GET /front/components/footer.html
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Securing GET /front/images/logo.webp
+2025-09-10 21:26:41 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:26:41 - o.s.security.web.FilterChainProxy - Secured GET /front/images/logo.webp
+2025-09-10 21:27:25 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:27:25 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:27:26 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:27:26 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:27:26 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:27:36 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 26576 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:27:36 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:27:36 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:27:36 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:27:37 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:27:37 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:27:38 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:27:38 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:27:38 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:27:38 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:27:38 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2467 ms
+2025-09-10 21:27:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:27:39 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:27:39 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a1727dc
+2025-09-10 21:27:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:27:39 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:27:39 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.052s)
+2025-09-10 21:27:39 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:27:39 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:27:40 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:27:40 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:27:40 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:27:40 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:27:40 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:27:40 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:27:40 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:27:41 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:27:41 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:27:42 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:27:43 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:27:43 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:27:44 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:27:44 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:27:44 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:27:44 - c.c.project.ProjectApplication - Started ProjectApplication in 9.062 seconds (process running for 9.768)
+2025-09-10 21:28:02 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 21:28:02 - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-10 21:28:02 - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/index.html
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/index.html
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/pages/homepage.js
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/styles/pages/homepage.css
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/pages/homepage.js
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/styles/pages/homepage.css
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/images/caio.jpg
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/images/jackson.jpg
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/images/caio.jpg
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/images/douglas.jpg
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/images/jackson.jpg
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/images/douglas.jpg
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/header.js
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/header.js
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/footer.js
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/footer.js
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/loginAndRegister.js
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/loginAndRegister.js
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/components/headerLinkActive.js
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/scripts/config.js
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/scripts/config.js
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/components/header.html
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/components/header.html
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /styles/components/header.css
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/components/footer.html
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/components/footer.html
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Securing GET /front/images/logo.webp
+2025-09-10 21:28:02 - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-10 21:28:02 - o.s.security.web.FilterChainProxy - Secured GET /front/images/logo.webp
+2025-09-10 21:38:21 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:38:21 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:38:21 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:38:21 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:38:21 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-10 21:45:51 - c.c.project.ProjectApplication - Starting ProjectApplication using Java 21.0.8 with PID 11176 (C:\Users\caioa\IdeaProjects\checkbuy_pitch\project\target\classes started by caioa in C:\Users\caioa\IdeaProjects\checkbuy_pitch)
+2025-09-10 21:45:51 - c.c.project.ProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-10 21:45:51 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10 21:45:51 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10 21:45:53 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 21:45:53 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 160 ms. Found 9 JPA repository interfaces.
+2025-09-10 21:45:54 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-10 21:45:54 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-10 21:45:54 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-10 21:45:54 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-10 21:45:54 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2642 ms
+2025-09-10 21:45:54 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-10 21:45:54 - i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-10 21:45:55 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@331f21d0
+2025-09-10 21:45:55 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-10 21:45:55 - org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/checkbuy?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-10 21:45:55 - o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.062s)
+2025-09-10 21:45:55 - o.f.core.internal.command.DbMigrate - Current version of schema `checkbuy`: 4
+2025-09-10 21:45:55 - o.f.core.internal.command.DbMigrate - Schema `checkbuy` is up to date. No migration necessary.
+2025-09-10 21:45:55 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 21:45:55 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-10 21:45:55 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-10 21:45:56 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 21:45:56 - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 21:45:56 - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-10 21:45:56 - o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 21:45:57 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 21:45:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:45:58 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-10 21:46:11 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name autenticacaoService
+2025-09-10 21:46:11 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 21:46:12 - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, SecurityFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-10 21:46:12 - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-10 21:46:13 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-10 21:46:13 - c.c.project.ProjectApplication - Started ProjectApplication in 22.035 seconds (process running for 22.724)
+2025-09-10 21:48:32 - o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 21:48:32 - o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-10 21:48:32 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 21:48:32 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-10 21:48:32 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
